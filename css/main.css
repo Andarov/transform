@@ -14,10 +14,9 @@
     display: flex;
     border: 20px ridge grey;
     box-shadow: 5px 5px 15px;
-    background-image: url(https://img.theculturetrip.com/768x/smart/wp-content/uploads/2021/05/rcm2ap.jpg);
+    background-image: url(../img/beach.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
 }
 
 .deraza {
@@ -42,4 +41,10 @@
 
 .rom:hover .right {
     transform: perspective(2000px) rotateY(125deg);
+}
+
+div {
+    background-image: url("photo");
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
 }
