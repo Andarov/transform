@@ -1,0 +1,44 @@
+.wall {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0 200px;
+    background-image: url("../img/grey.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.rom {
+    display: flex;
+    border: 20px ridge grey;
+    box-shadow: 5px 5px 15px;
+    background-image: url(https://img.theculturetrip.com/768x/smart/wp-content/uploads/2021/05/rcm2ap.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.deraza {
+    border: 20px ridge rgb(78, 68, 68);
+    width: 200px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: transform 0.7s ease;
+}
+
+.left {
+    transform-origin: left center;
+}
+
+.right {
+    transform-origin: right center;
+}
+
+.rom:hover .left {
+    transform: perspective(2000px) rotateY(-125deg);
+}
+
+.rom:hover .right {
+    transform: perspective(2000px) rotateY(125deg);
+}
